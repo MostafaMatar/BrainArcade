@@ -1,0 +1,42 @@
+body {
+    background-color: #2e16a4;
+    color: white;
+    font-family: 'ArcadeClassic', sans-serif !important;
+}
+
+#game-header {
+    text-align: center;
+    font-size: 10vh;
+    margin: 20px;
+}
+
+p {
+    font-size: xx-large;
+}
+
+#game-container {
+    text-align: center;
+    height: 50vh;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    color: #ccc;
+    font-size: xx-large;
+}
+
+button {
+    padding: 15px;
+    margin: 15px;
+    background-color: white;
+    /* Green */
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'ArcadeClassic', sans-serif !important;
+    font-size: x-large;
+}
+
+a {
+    text-decoration: none;
+}
