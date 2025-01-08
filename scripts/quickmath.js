@@ -1,6 +1,7 @@
 const problemElement = document.getElementById('problem');
 const answerInput = document.getElementById('answer');
 const submitButton = document.getElementById('submit-button');
+const newGameButton = document.getElementById('new-game-button');
 const answerStatus = document.getElementById('status');
 const timerDisplay = document.getElementById('timer-display');
 let timeLeft = 60;
@@ -63,17 +64,21 @@ submitButton.addEventListener('click', () => {
   checkAnswer();
 });
 
+newGameButton.addEventListener('click', () => {
+  window.location.reload();
+});
+
 let intervalId = setInterval(function () {
   timeLeft--;
   timerDisplay.textContent = 'Time: '+timeLeft;
   if (timeLeft == 0) {
     clearInterval(intervalId);
-    document.getElementById('modal').innerHTML = `
+    document.getElementById('results').innerHTML = `
       <h2>Game Over!</h2>
-      <p>Your final score is: ${score}</p>
+      <p>Your final score is: ${score}/${numberOfQuestions}</p>
       <p>Your accuracy is: ${((score / numberOfQuestions) * 100).toFixed(2)}%</p>
     `;
-    modal.style.display = 'block';
+    document.getElementById('game').style.display = 'none';
   }
 }, 1000);
 
