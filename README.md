@@ -1,0 +1,1 @@
+This is a web application built with help of AI for learning purposes
