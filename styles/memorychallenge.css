@@ -1,7 +1,13 @@
+#game-board{
+  display: flex;
+  flex-direction: row;
+  font-family: 'ArcadeClassic', sans-serif !important;
+}
 .card {
   width: 100px;
   height: 100px;
-  background-color: #ccc;
+  background-color: white;
+  color: black;
   margin: 10px;
   display: flex;
   justify-content: center;
@@ -9,6 +15,7 @@
   font-size: 30px;
   cursor: pointer;
   border-radius: 5px;
+  flex: 1;
 }
 
 .match {
