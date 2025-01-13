@@ -1,8 +1,14 @@
-#game-board{
+@font-face {
+  font-family: 'Arcade';
+  src: url('Arcade.otf');
+}
+
+#game-board {
   display: flex;
   flex-direction: row;
-  font-family: 'ArcadeClassic', sans-serif !important;
+  font-family: 'Arcade', sans-serif !important;
 }
+
 .card {
   width: 100px;
   height: 100px;
@@ -19,5 +25,5 @@
 }
 
 .match {
-  background-color: #0a970a; 
+  background-color: #0a970a;
 }

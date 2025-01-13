@@ -1,9 +1,14 @@
+@font-face {
+    font-family: 'Arcade';
+    src: url('Arcade.otf');
+}
+
 input[type="number"] {
     padding: 15px;
     margin: 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
     width: 20%;
-    font-family: 'ArcadeClassic', sans-serif !important;
+    font-family: 'Arcade', sans-serif !important;
     font-size: x-large;
 }

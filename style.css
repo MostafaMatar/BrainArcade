@@ -1,7 +1,12 @@
+@font-face {
+    font-family: 'Arcade';
+    src: url('Arcade.otf');
+}
+
 body {
     background-color: #4a4270;
     color: white;
-    font-family: 'ArcadeClassic', sans-serif !important;
+    font-family: 'Arcade', sans-serif !important;
 }
 
 #game-header {
@@ -33,7 +38,7 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-family: 'ArcadeClassic', sans-serif !important;
+    font-family: 'Arcade', sans-serif !important;
     font-size: x-large;
 }
 
