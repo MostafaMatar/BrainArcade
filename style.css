@@ -21,7 +21,7 @@ p {
 
 #game-container {
     text-align: center;
-    height: 50vh;
+    min-height: 50vh;
     background-color: #000000;
     padding: 20px;
     border-radius: 5px;
@@ -48,4 +48,16 @@ a:visited,
 a:active {
     color: inherit;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    #game-header {
+        font-size: 8vh;
+    }
+    p {
+        font-size: x-large;
+    }
+    button {
+        font-size: large;
+    }
 }

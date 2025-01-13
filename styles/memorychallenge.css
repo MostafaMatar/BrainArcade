@@ -5,13 +5,15 @@
 
 #game-board {
   display: flex;
+  height: fit-content;
   flex-direction: row;
   font-family: 'Arcade', sans-serif !important;
+  flex-wrap: wrap; 
 }
 
 .card {
-  width: 100px;
-  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
   background-color: white;
   color: black;
   margin: 10px;
@@ -26,4 +28,13 @@
 
 .match {
   background-color: #0a970a;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    margin: 5px;
+  }
 }
