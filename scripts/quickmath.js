@@ -1,7 +1,6 @@
 const problemElement = document.getElementById('problem');
 const answerInput = document.getElementById('answer');
 const submitButton = document.getElementById('submit-button');
-const newGameButton = document.getElementById('new-game-button');
 const answerStatus = document.getElementById('status');
 const timerDisplay = document.getElementById('timer-display');
 let timeLeft = 60;
@@ -62,10 +61,6 @@ function generateProblem() {
 
 submitButton.addEventListener('click', () => {
   checkAnswer();
-});
-
-newGameButton.addEventListener('click', () => {
-  window.location.reload();
 });
 
 let intervalId = setInterval(function () {

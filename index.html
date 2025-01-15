@@ -19,17 +19,23 @@
   </header>
   <div id="game-container">
     <p>Welcome to the arcade for your brain. Click one of the buttons below to start a new game</p>
-    <a href="pages/quickmath.html">
+    <a class="game-link" data-descriptionId="math" href="pages/quickmath.html">
       <button>Quick Math</button>
     </a>
-    <a href="pages/memorychallenge.html">
+    <a class="game-link" data-descriptionId="memory" href="pages/memorychallenge.html">
       <button>Memory Challenge</button>
     </a>
+    <a class="game-link" data-descriptionId="words" href="pages/wordmaster.html">
+      <button>Word Master</button>
+    </a>
+    <p id="math" class="hidden">How is that math wizardry of yours doing? Solve the most math equations in 60 seconds to test it.</p>
+    <p id="memory" class="hidden">Do you want to challenge your memory? Click a card to flip it and reveal the word. You can only view two cards at once. Match all cards to win the game in the fastest time.</p>
+    <p id="words" class="hidden">Help! All our words have been missed up. Can you fix them?</p>
   </div>
   <a title="Web Analytics" href="https://clicky.com/101474887"><img alt="Clicky"
       src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
   <script async data-id="101474887" src="//static.getclicky.com/js"></script>
-
+  <script src="index.js"></script>
 </body>
 
 </html>

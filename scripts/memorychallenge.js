@@ -7,10 +7,6 @@ cardValues.sort(() => Math.random() - 0.5);
 
 const gameBoard = document.getElementById('game-board');
 const results = document.getElementById('results');
-const newGameButton = document.getElementById('new-game-button');
-newGameButton.addEventListener('click', () => {
-  window.location.reload();
-});
 
 let flippedCards = [];
 let matchedCards = [];
