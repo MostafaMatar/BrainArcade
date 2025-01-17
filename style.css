@@ -4,64 +4,71 @@
 }
 
 body {
-    background-color: #4a4270;
-    color: white;
+    background-color: #1a1b2e;
+    color: #00ff99;
     font-family: 'Arcade', sans-serif !important;
+    text-shadow: 0 0 5px #00ff99;
 }
 
 #game-header {
     text-align: center;
     font-size: 10vh;
     margin: 20px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+    animation: glow 2s ease-in-out infinite alternate;
 }
 
 p {
     font-size: xx-large;
-}
-
-#game-container {
-    text-align: center;
-    min-height: 50vh;
-    background-color: #000000;
-    padding: 20px;
-    border-radius: 5px;
-    color: #ccc;
-    font-size: xx-large;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
 }
 
 button {
-    padding: 15px;
-    margin: 15px;
-    background-color: white;
-    /* Green */
-    color: black;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: 'Arcade', sans-serif !important;
-    font-size: x-large;
+    background-color: #2a2b4e;
+    color: #00ff99;
+    border: 2px solid #00ff99;
+    padding: 10px 20px;
+    font-family: 'Arcade', sans-serif;
+    text-shadow: 0 0 5px #00ff99;
+    box-shadow: 0 0 10px #00ff99;
+    transition: all 0.3s ease;
 }
 
-a,
-a:hover,
-a:visited,
-a:active {
-    color: inherit;
+button:hover {
+    background-color: #00ff99;
+    color: #1a1b2e;
+    box-shadow: 0 0 20px #00ff99;
+    transform: scale(1.05);
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+    }
+    to {
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    }
+}
+
+a {
     text-decoration: none;
+    color: inherit;
 }
 
-@media (max-width: 768px) {
-    #game-header {
-        font-size: 8vh;
-    }
-    p {
-        font-size: x-large;
-    }
-    button {
-        font-size: large;
-    }
+.game-link {
+    transition: transform 0.3s ease;
+}
+
+.game-link:hover {
+    transform: scale(1.1);
 }
 
 .hidden{
-    display: none;
+    display:none;
+}
+
+#game-container{
+    text-align: center;
 }
