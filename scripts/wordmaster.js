@@ -1,6 +1,7 @@
 const scrambledWordElement = document.getElementById('scrambled-word');
 const guessInput = document.getElementById('guess');
 const submitButton = document.getElementById('submit');
+const skipButton = document.getElementById('skip');
 const feedbackElement = document.getElementById('feedback');
 
 guessInput.addEventListener('keyup', function (event) {
@@ -39,6 +40,11 @@ function checkGuess(guess) {
 submitButton.addEventListener('click', () => {
   const guess = guessInput.value; 
   checkGuess(guess); 
+  guessInput.value = ''; 
+});
+skipButton.addEventListener('click', () => {
+  feedbackElement.textContent = 'The word was '+randomWord+'.';
+  generateScrambledWord();
   guessInput.value = ''; 
 });
 
